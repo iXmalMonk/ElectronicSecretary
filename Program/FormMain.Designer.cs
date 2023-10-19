@@ -21,12 +21,14 @@
             phoneBookToolStripMenuItem = new ToolStripMenuItem();
             taskManagerToolStripMenuItem = new ToolStripMenuItem();
             deadlinesForTasksToolStripMenuItem = new ToolStripMenuItem();
+            phoneBookFilterToolStripMenuItem = new ToolStripMenuItem();
+            taskManagerFilterToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { phoneBookToolStripMenuItem, taskManagerToolStripMenuItem, deadlinesForTasksToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { phoneBookToolStripMenuItem, taskManagerToolStripMenuItem, deadlinesForTasksToolStripMenuItem, phoneBookFilterToolStripMenuItem, taskManagerFilterToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -36,23 +38,37 @@
             // phoneBookToolStripMenuItem
             // 
             phoneBookToolStripMenuItem.Name = "phoneBookToolStripMenuItem";
-            phoneBookToolStripMenuItem.Size = new Size(80, 20);
+            phoneBookToolStripMenuItem.Size = new Size(120, 20);
             phoneBookToolStripMenuItem.Text = "Телефонная книга";
             phoneBookToolStripMenuItem.Click += phoneBookToolStripMenuItem_Click;
             // 
             // taskManagerToolStripMenuItem
             // 
             taskManagerToolStripMenuItem.Name = "taskManagerToolStripMenuItem";
-            taskManagerToolStripMenuItem.Size = new Size(88, 20);
+            taskManagerToolStripMenuItem.Size = new Size(132, 20);
             taskManagerToolStripMenuItem.Text = "Планировщик задач";
             taskManagerToolStripMenuItem.Click += taskManagerToolStripMenuItem_Click;
             // 
             // deadlinesForTasksToolStripMenuItem
             // 
             deadlinesForTasksToolStripMenuItem.Name = "deadlinesForTasksToolStripMenuItem";
-            deadlinesForTasksToolStripMenuItem.Size = new Size(114, 20);
+            deadlinesForTasksToolStripMenuItem.Size = new Size(140, 20);
             deadlinesForTasksToolStripMenuItem.Text = "Дедлайны по задачам";
             deadlinesForTasksToolStripMenuItem.Click += deadlinesForTasksToolStripMenuItem_Click;
+            // 
+            // phoneBookFilterToolStripMenuItem
+            // 
+            phoneBookFilterToolStripMenuItem.Name = "phoneBookFilterToolStripMenuItem";
+            phoneBookFilterToolStripMenuItem.Size = new Size(164, 20);
+            phoneBookFilterToolStripMenuItem.Text = "Телефонная книга - поиск";
+            phoneBookFilterToolStripMenuItem.Click += phoneBookFilterToolStripMenuItem_Click;
+            // 
+            // taskManagerFilterToolStripMenuItem
+            // 
+            taskManagerFilterToolStripMenuItem.Name = "taskManagerFilterToolStripMenuItem";
+            taskManagerFilterToolStripMenuItem.Size = new Size(176, 20);
+            taskManagerFilterToolStripMenuItem.Text = "Планировщик задач - поиск";
+            taskManagerFilterToolStripMenuItem.Click += taskManagerFilterToolStripMenuItem_Click;
             // 
             // FormMain
             // 
@@ -76,5 +92,7 @@
         private ToolStripMenuItem phoneBookToolStripMenuItem;
         private ToolStripMenuItem taskManagerToolStripMenuItem;
         private ToolStripMenuItem deadlinesForTasksToolStripMenuItem;
+        private ToolStripMenuItem phoneBookFilterToolStripMenuItem;
+        private ToolStripMenuItem taskManagerFilterToolStripMenuItem;
     }
 }
